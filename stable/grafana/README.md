@@ -72,7 +72,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `ldap.config  `                   | Grafana's LDAP configuration                  | `""`                                                    |
 | `annotations`                     | Deployment annotations                        | `{}`                                                    |
 | `podAnnotations`                  | Pod annotations                               | `{}`                                                    |
-| `initContainer.dashboards.enabled`| Enabled the cluster wide search for datasources and adds/updates/deletes them in grafana once on pod init |`false`       |
+| `initContainer.datasources.enabled`| Enabled the cluster wide search for datasources and adds/updates/deletes them in grafana once on pod init |`false`       |
 | `initContainer.dashboards.enabled`| Label that config maps with datasources should have to be added | `false`                               |
 | `sidecar.dashboards.enabled`      | Enabled the cluster wide search for dashboards and adds/updates/deletes them in grafana | `false`       |
 | `sidecar.dashboards.label`        | Label that config maps with dashboards should have to be added | `false`                                |
